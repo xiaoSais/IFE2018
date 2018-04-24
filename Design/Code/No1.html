@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id ="title" class="font-transition-1">前端学院</div>
+        <div id="line" class="bottom-line"></div>
+    </div>
+    
+    <div class="button" onclick ="addClass()">
+        <button>切换样式</button>
+    </div>
+</body>
+
+<script>
+    let op  = {
+        add: (ele, cls) => {
+            let type = Object.prototype.toString.call(ele);
+            if(type === '[object HTMLDivElement]' && typeof type === 'string') {
+                return ele.classList.add(cls);
+            } else return;
+        },
+        clr: (ele, cls) => {
+            let type = Object.prototype.toString.call(ele);
+            if(type === '[object HTMLDivElement]' && typeof type === 'string') {
+                return ele.classList.remove(cls);
+            } else return;
+        },
+        getEle: (id) => {
+            return [
+                document.getElementById(id),
+                document.getElementById(id).className
+            ]
+        }
+    }
+
+    function addClass() {
+        let [lineEle, lineClass] = op.getEle('line');
+        let [titleEle, titleClass] = op.getEle('title');
+        if(titleClass === 'font-transition-1') {
+            op.add(titleEle, 'font-transition-2');
+        } else  op.clr(titleEle, 'font-transition-2');
+        
+        if(lineClass === 'bottom-line') {
+            op.add(lineEle, 'transtion-width');
+        } else op.clr(lineEle, 'transtion-width');
+    }
+</script>
+
+<style>
+    body {
+        text-align: center;
+    }
+    .container {
+        display: inline-block;
+        margin-bottom: 15px;
+        
+    }
+
+    .bottom-line {
+        display: inline-block;
+        width: 0;
+        font-size: 20px;
+        height: 5px;
+        background-color: blue;
+        transition: width .4s;
+        -webkit-transition: width  cubic-bezier(.48,.49,.72,.73)  .4s;
+        -moz-transition: width cubic-bezier(.98,.01,.99,.32)  .4s;
+        -o-transition: width  cubic-bezier(.98,.01,.99,.32) .4s;
+    }
+    
+    .transtion-width {
+        width: 100%;
+    }
+
+    .font-transition-1 {
+        margin:  0;
+        padding: 2px 5px;
+        font-size: 35px;
+        font-weight: bold;
+        transition: color .4s;
+        -webkit-transition: color .4s;
+        -moz-transition: color .4s;
+        -o-transition: color .4s;
+    }
+
+    .font-transition-2 {
+        color: blue;
+    }
+
+    button {
+        background-color: transparent; 
+        border: 1px solid gray;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 2px 10px;
+        border-radius: 2px;
+        -webkit-border-radius: 2px; 
+        -moz-border-radius: 2px;
+        outline: none;
+        cursor: pointer;      
+    }
+</style>
+</html>
