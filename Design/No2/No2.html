@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--原始元素-->
+    <div class="box0">box0</div>
+    
+    <!--向垂直方向的对称轴逆时针旋转30度-->
+    <div class="box0 box1">box1</div>
+
+    <!--将x方向压缩两倍-->
+    <div class="box0 box2">box2</div>
+
+    <!--旋转45度-->
+    <div class="box0 box3">box3</div>
+
+    <!--向x, y方向平移10px, 20px-->
+    <div class="box0 box4">box4</div>
+
+    <!--综合以上效果-->
+    <div class="box0 box5">box5</div>
+
+</body>
+<style>
+    .box0 {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: grey;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 100px;
+        margin: 50px;
+    }
+
+    .box1 {
+        /*这里也可以写skewX(30deg),skew()省略第二个参数代表只有x方向上的变形*/
+        -webkit-transform: skew(30deg);
+        transform: skew(30deg);
+        -moz-transform: skew(30deg);
+        -o-transform: skew(30deg);
+        -ms-transform: skew(30deg);
+    }
+
+    .box2 {
+        /*这里不能简写成scale(.5)，因为这代表对x方向和y方向同时缩放*/
+        transform: scaleX(.5);
+        -webkit-transform: scaleX(.5);
+        -moz-transform: scaleX(.5);
+        -o-transform: scaleX(.5);
+        -ms-transform: scaleX(.5);
+    }
+
+    .box3 {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+
+    .box4 {
+        -webkit-transform: translate(10px, 20px);
+        -moz-transform: translate(10px, 20px);
+        -o-transform: translate(10px, 20px);
+        transform: translate(10px, 20px);
+        -ms-transform: translate(10px, 20px);
+    }
+
+    .box5 {
+        transform: skew(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+        -webkit-transform: skew(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+        -moz-transform: skew(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+        -o-transform: skew(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+        -ms-transform: skew(30deg) scaleX(.5) rotate(45deg) translate(10px, 20px);
+    }
+
+</style>
+</html>

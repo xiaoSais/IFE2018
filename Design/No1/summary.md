@@ -8,6 +8,7 @@
 ### Done
 
 * Dom操作
+    
     * document.getElementById('#id');
     * document.getElementByTagName('div'); //DOMList
     * document.querySelector('选择器');//返回第一个元素
