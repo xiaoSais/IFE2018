@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: gray;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+
+
+section h2{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: #D6D6D6;
+   
+}
+
+section {
+    border-bottom: 1px solid gray; 
+    margin-bottom: 1px;
+}
+.detail, .item, .item2 {
+    display: inline-block;
+    padding: 5px;
+}
+
+section {
+    text-align: left;
+    display: flex;
+}
+

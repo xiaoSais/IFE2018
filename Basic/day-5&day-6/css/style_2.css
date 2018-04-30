@@ -1,0 +1,38 @@
+
+header {
+    width: 160px;
+    float: left;
+    position: relative;
+    height: 700px;
+    text-align: center;
+    background-color: #65A4FA;
+    color: aliceblue;
+    padding-top: 20px;
+    
+}
+.container {
+    overflow: hidden;
+}
+.right {
+    margin-left: 160px;
+    padding-left: 20px;
+}
+
+.item {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.key {
+    font-weight:  bold;
+    padding-right: 10px;
+}
+
+.item2 span {
+    display: block;
+    padding: 0;
+}
+
+.item2 {
+    margin-bottom: 15px;
+}
