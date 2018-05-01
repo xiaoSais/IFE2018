@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">Logo</div>
+                <div class="nav">
+                    <a href="#">Github</a>
+                    <a href="#">Register</a>
+                    <a href="#">Login</a>
+                </div>
+            </nav>
+        </header>
+        <div class="banner">
+            <div class="slider">
+                <div class="item">1</div>
+                <div class="item active">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="left"></div>
+            <div class="main-nav">
+                <div class="nav-group">
+                    <div class="nav-item nav-item-active">HOME</div>
+                    <div class="nav-item">PROFILE</div>
+                    <div class="nav-item">ABOUT</div>
+                </div>
+                <div class="nav-right"></div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="content">
+            <section class="s1">
+                <div>This is Content1</div>
+                <div class="s1">MaybeContent 2</div>
+                <div>Content3</div>
+            </section>
+            <section class="s2">
+                <div>Content4</div>
+                <div class="s1">Content5</div>
+                <div class="s1">Content6</div>
+                <div>Content7</div>
+            </section>
+            <section class="s3">
+                <div>Content8</div>
+                <div class="s1">Content9</div>
+                <div>Content10</div>
+            </section>
+        </div>
+        <footer>
+                &copy;2018 ife.baidu.com
+        </footer>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+    }
+
+    header {
+       background-color: #333333;
+       height: 65px;
+       width: 100%; 
+    }
+
+    nav {
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+        color: white;
+        height: 100%;
+        font-size: 21px;
+    }
+    .logo {
+        line-height: 65px;
+    }
+    
+    .nav {
+        color: white;
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        top: 0;
+    }
+
+    .nav a {
+        color: white;
+        font-size: 12px;
+    }
+
+    .banner {
+        height: 240px;
+        background-color: #66BB33;
+        position: relative;
+    }
+
+    .banner .slider {
+        position: absolute;
+        bottom: 5px;
+        right: 150px;    
+    }
+
+    .item {
+        display: inline-block;
+        width: 20px;
+        background-color: #B2DD99;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .active {
+        height: 35px;
+        line-height: 45px;
+        background-color: white;
+    }
+
+    .main {
+        height: 60px;
+        width: 100%; 
+        display: flex;
+    }
+
+    .main-nav {
+        width: 960px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .nav-group {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .nav-item {
+        width: 85px;
+        height: 40px;
+        background: #EEEEEE;
+        border-radius: 20px 20px 0px 0px; 
+        border: 1px solid #D6D6D6;
+        font-size: 12PX;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .nav-item-active {
+        background-color: white;
+        border-bottom: none;
+    }
+
+    .nav-right {
+        flex: 1;
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    .left, .right {
+        flex: 1;
+        border-bottom: 1px solid #D6D6D6;
+    }
+
+    .content {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section div{
+        margin-top: 10px;
+        border: 1px solid #D6D6D6;
+        padding: 80px;
+    }
+
+    .s1 div {
+        padding: 102px;
+    }
+
+    .s3 div {
+        padding: 102px 119px;
+    }
+
+    footer {
+        height: 100px;
+        background-color: #666666;
+        margin-top: 20px;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 15px;
+        color: white;
+    }
+</style>
+</html>

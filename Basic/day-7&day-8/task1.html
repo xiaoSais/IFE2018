@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局</title>
+</head>
+<body>
+    <!--左侧30%、右侧70%使用float实现-->
+    <div class="container container1">
+        <div class="left left-2-percent-float">左侧30%、右侧70%使用float实现</div>
+        <div class="right right-2-percent-float">左侧30%、右侧70%使用float实现</div>
+    </div>
+
+    <!--左侧30%、右侧70%使用Position实现-->
+    <div class="container container2">
+        <div class="left left-2-percent-position">左侧30%、右侧70%使用Position实现</div>
+        <div class="right right-2-percent-position">左侧30%、右侧70%使用Position实现</div>
+    </div>
+    
+    <!--左侧30%、右侧70%使用flex实现-->
+    <div class="container container3">
+        <div class="left left-2-percent-flex">左侧30%、右侧70%使用flex实现</div>
+        <div class="right right-2-percent-flex">左侧30%、右侧70%使用flex实现</div>
+    </div> 
+
+    <!--左边固定，右边自适应float实现-->
+    <div class="container container1">
+        <div class="left left1">左边固定，右边自适应float实现</div>
+        <div class="right right1">左边固定，右边自适应float实现</div>
+    </div>
+
+    <!--左边固定，右边自适应position实现-->
+    <div class="container container2">
+        <div class="left left2">左边固定，右边自适应position实现</div>
+        <div class="right right2">左边固定，右边自适应position实现</div>
+    </div>
+    
+    <!--左边固定，右边自适应flex实现-->
+    <div class="container container3">
+        <div class="left left3">左边固定，右边自适应flex实现</div>
+        <div class="right right3">左边固定，右边自适应flex实现</div>
+    </div>
+
+    <!--右边固定，左边自适应float实现，需要调换左边和右边的位置-->
+    <div class="container container1">
+        <div class="right right4">右边固定，左边自适应float实现，需要调换左边和右边的位置</div>
+        <div class="left left4">右边固定，左边自适应float实现，需要调换左边和右边的位置</div>
+    </div>
+
+    <!--右边固定，左边自适应position实现，需要调换左边和右边的位置-->
+    <div class="container container2">
+        <div class="right right5">右边固定，左边自适应position实现，需要调换左边和右边的位置</div>
+        <div class="left left5">右边固定，左边自适应position实现，需要调换左边和右边的位置</div>
+    </div>
+    
+    <!--右边固定，左边自适应flex实现-->
+    <div class="container container3">
+        <div class="left left6">右边固定，左边自适应flex实现</div>
+        <div class="right right6">右边固定，左边自适应flex实现</div>
+    </div>
+
+    <hr />
+
+    <!--三栏布局，左边固定，中间自适应，右边固定，float实现，需要调换右边和中间的位置-->
+    <div class="container">
+        <div class="left left-1">三栏布局，左边固定，中间自适应，右边固定，float实现</div>
+        <div class="right right-1">三栏布局，左边固定，中间自适应，右边固定，float实现</div>
+        <div class="middle middle-1">三栏布局，左边固定，中间自适应，右边固定，float实现</div>
+    </div>
+
+    <!--三栏布局，左边固定，中间自适应，右边固定，position实现，需要调换右边和中间的位置-->
+    <div class="container-2">
+        <div class="left left-2">三栏布局，左边固定，中间自适应，右边固定，position实现</div>
+        <div class="right right-2">三栏布局，左边固定，中间自适应，右边固定，position实现</div>
+        <div class="middle middle-2">三栏布局，左边固定，中间自适应，右边固定，position实现</div>
+    </div>
+
+    <!--三栏布局，左边固定，中间自适应，右边固定，flex实现，需要调换右边和中间的位置-->
+    <div class="container-3">
+        <div class="left left-3">三栏布局，左边固定，中间自适应，右边固定，flex实现</div>
+        <div class="middle middle-3">三栏布局，左边固定，中间自适应，右边固定，flex实现</div>
+        <div class="right right-3">三栏布局，左边固定，中间自适应，右边固定，flex实现</div>
+    </div>
+
+    <!--三栏布局，左中固定，右边自适应float实现-->
+    <div class="container1">
+        <div class="left left-4">三栏布局，左中固定，右边自适应float实现</div>
+        <div class="middle middle-4">三栏布局，左中固定，右边自适应float实现</div>
+        <div class="right right-4">三栏布局，左中固定，右边自适应float实现</div>
+        
+    </div>
+
+    <!--三栏布局，左中固定，右边自适应position实现-->
+    <div class="container2">
+        <div class="left left-5">三栏布局，左中固定，右边自适应position实现</div>
+        <div class="middle middle-5">三栏布局，左中固定，右边自适应position实现</div>
+        <div class="right right-5">三栏布局，左中固定，右边自适应position实现</div>
+    </div>
+
+    <!--三栏布局，左中固定，右边自适应flex实现-->
+    <div class="container3" style="margin-bottom: 150px;">
+        <div class="left left-6">三栏布局，左中固定，右边自适应flex实现</div>
+        <div class="middle middle-6">三栏布局，左中固定，右边自适应flex实现</div>
+        <div class="right right-6">三栏布局，左中固定，右边自适应flex实现</div>
+    </div>
+</body>
+<style>
+    /*两兰布局样式表*/
+
+    .container {
+        background-color: aqua;
+        margin-bottom: 50px;
+    }
+    .left {
+        background-color: brown;
+    }
+    .right {
+        background-color: blueviolet;
+    }
+
+    /*两列百分比布局float实现，注意父级元素设置overflow是为了子元素能够撑开父级元素*/
+    .container1 {
+        overflow: hidden;
+    }
+
+    .left-2-percent-float {
+        float: left;
+        width: 30%;
+    }
+
+    .right-2-percent-float {
+        margin-left: 30%;
+    }
+
+    /*两列百分比布局position实现*/
+    .container2 {
+        position: relative;
+        
+    }
+
+    .left-2-percent-position {
+        position: absolute;
+        width: 30%;
+    }
+
+    .right-2-percent-position {
+        margin-left: 30%;
+    }
+
+    /*两列百分比布局flex实现*/
+    .container3 {
+        display: flex;
+    }
+    .left-2-percent-flex {
+        width: 30%;
+    }
+    .right-2-percent-flex {
+        flex: 1;
+    }
+
+    /*左边定宽，右边自适应float实现*/
+    .left1 {
+        float: left;
+        width: 300px;
+        
+    }
+    .right1 {
+        margin-left: 300px;
+    }
+
+    /*左边定宽，右边自适应position实现*/
+    .left2 {
+        position: absolute;
+        width: 300px;
+    }
+    .right2 {
+        margin-left: 300px;
+    }
+
+    /*左边定宽，右边自适应flex实现*/
+    .left3 {
+        width: 300px;
+    }
+    .right3 {
+        flex: 1;
+    }
+
+    /*右边定宽，左边自适应float实现*/
+    .left4 {
+        margin-right: -400px;
+    }
+    .right4 {
+        width: 400px;
+        float: right;
+    }
+
+    /*右边定宽，左边自适应position实现*/
+    .right5 {
+        width: 400px;
+        position: absolute;
+        right: 0;
+    }
+
+    /*右边定宽， 左边自适应flex实现*/
+    .left6 {
+        flex: 1;
+    }
+    .right6 {
+        width: 400px;
+    }
+
+</style>
+<style>
+    /*三栏布局样式表*/
+
+    /*三栏布局，左边固定，中间自适应，右边固定，float实现，需要调换右边和中间的位置*/
+    .middle {
+        background-color: red;;
+    }
+
+    .left-1 {
+        float: left;
+        width: 400px;
+    }
+    .middle-1 {
+        margin-right: 400px;
+    }
+
+    .right-1 {
+        width: 400px;
+        float: right;
+    }
+
+    /*三栏布局，左边固定，中间自适应，右边固定，position实现，需要调换右边和中间的位置*/
+    .container-2 {
+        position: relative;
+    }
+    .left-2 {
+        width: 400px;
+        position: absolute;
+    }
+    .middle-2 {
+        margin-left: 400px;
+    }
+    .right-2 {
+        position: absolute;
+        right: 0;
+    }
+
+    /*三栏布局，左边固定，中间自适应，右边固定，flex实现*/
+    .container-3 {
+        display: flex;
+        margin-top: 50px;
+    }
+    .left-3, .right-3 {
+        width: 400px;
+    }
+    .middle-3 {
+        flex: 1;
+    }
+
+    /*三栏布局，左中固定，右边自适应float实现*/
+    .container1 {
+        margin-top: 30px;
+    }
+    .left-4 {
+        width: 400px;
+        float: left;
+    }
+    .middle-4 {
+        float: left;
+        width: 400px;
+    }
+
+    /*三栏布局，左中固定，右边自适应position实现*/
+    .container2 {
+        margin-top: 30px;
+    }
+    .left-5 {
+        position: absolute;
+        width: 400px;
+    }
+    .middle-5 {
+        position: absolute;
+        width: 400px;
+        margin-left: 400px;
+    }
+    .right-5 {
+        margin-left: 800px;
+    }
+
+    /*三栏布局，左中固定，右边自适应flex实现*/
+    .container3 {
+        margin-top: 30px;
+    }
+    .left-6, .middle-6 {
+        width: 400px;
+    }
+    .right-6 {
+        flex: 1;
+    }
+</style>
+</html>
