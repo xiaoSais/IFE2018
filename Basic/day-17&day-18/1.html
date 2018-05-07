@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        //获取DOM元素
+        let getEle = (ele) => {
+            return document.querySelectorAll(ele);
+        }
+        let inp = getEle('input'); 
+        let res = getEle('p');
+        let btn = getEle('button');
+
+        //因为type = 'number'限制只能输入数值，所以在这里只对输入值做空值判断
+        let judge = () => {
+            let  [n1, n2] = [inp[0].value, inp[1].value];
+            if(n1 === '' || n2 ==='') return false; else return [Number(n1), Number(n2)];
+        }
+
+        //为每一个按钮添加点击事件
+        for(let [i,j] of btn.entries()) {
+            j.onclick = () => {
+                let temp = judge();
+                if(temp) {
+                    switch(i) {
+                        case 0: 
+                            res[0].innerHTML = temp[0] + temp[1];
+                            break;
+                        case 1:
+                            res[0].innerHTML = temp[0] - temp[1];
+                            break;
+                        case 2: 
+                            res[0].innerHTML = temp[0] * temp[1];
+                            break;
+                        case 3:
+                            if(temp[1]) {
+                                res[0].innerHTML = temp[0] / temp[1]
+                            } else console.log('0 不能作为除数！！');
+                            break;
+                    }
+                } else console.log('请输入两个整数')
+            }
+        }
+    </script>
+</body>
+</html>
