@@ -193,11 +193,7 @@
     img.style.backgroundRepeat = 'no-repeat';
     setInterval(()=> {
         img.style.backgroundPosition = `${xps}px ${yps}px`;
-        if(yps === -7680) {
-            ps = 480;
-        } else if(yps === 0) {
-            ps = -480;
-        }
+        yps === -7680 ? ps = 480 : yps === 0 ? ps = -480 : ps;
         yps += ps
     },100)
 </script>
