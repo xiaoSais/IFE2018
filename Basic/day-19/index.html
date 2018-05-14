@@ -52,7 +52,7 @@
     console.log(findAllHtmlSpanInOneSection('news-normal'))
     function findListItem(sectionId, spanCont) {
         // 返回某个section下，所有所包含span内容为spanCont的LI标签
-        let section = document.getElementById(sectionId);
+        let section = document.getElementById(sectionId)    ;
         let spanList = [...section.querySelectorAll('span')];
         return spanList.filter(i => i.innerHTML === spanCont);
     }
